@@ -15,6 +15,14 @@ $ npm run dev || npm run start
 
 ```javascript
 
+'use strict';
+
+// MODULES
+const mysql = require('mysql');
+
+// LIBRARY
+const configClient = require('./lib/configClient');
+
 const client = mysql.createConnection({
   host: 'localhost',
   user: 'root',
