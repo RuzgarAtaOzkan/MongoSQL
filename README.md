@@ -11,6 +11,8 @@ $ npm run dev || npm run start
 
 ### Interact with SQL Server with the elegancy of MongoClient API
 
+1. Create your sql client
+
 ```javascript
 
 const client = mysql.createConnection({
@@ -27,6 +29,11 @@ client.connect((err) => {
 
   console.log('connected');
 });
+```
+
+Then create the db object API just like the MongoClient API by passing the sql client.
+
+```javascript
 
 const db = configClient(client);
 
