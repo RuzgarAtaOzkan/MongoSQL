@@ -4,7 +4,7 @@
 const mysql = require('mysql');
 
 // LIBRARY
-const configClient = require('./configClient');
+const configClient = require('./lib/configClient');
 
 const client = mysql.createConnection({
   host: 'localhost',
