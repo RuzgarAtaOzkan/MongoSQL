@@ -2,6 +2,8 @@
 
 ## Installation
 
+Assuming you have nodejs and git installed.
+
 ```bash
 $ git clone https://github.com/RuzgarAtaOzkan/mysql-mongo-api.git
 $ cd mysql-mongo-api
@@ -14,7 +16,6 @@ $ npm run dev || npm run start
 1. Create your sql client
 
 ```javascript
-
 'use strict';
 
 // MODULES
@@ -42,7 +43,6 @@ client.connect((err) => {
 Then create the db object API just like the MongoClient API by passing the sql client.
 
 ```javascript
-
 const db = configClient(client);
 
 const createTableResult = db.createTable('users', {
@@ -67,6 +67,5 @@ const user = {
   name: 'Ruzgar',
 };
 
-const insertOneResult = db.insertOne('users', user);
-
+const insertOneResult = db.insertInto('users', user);
 ```

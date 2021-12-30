@@ -45,4 +45,4 @@ const user = {
   name: 'Ruzgar',
 };
 
-const insertOneResult = db.insertOne('users', user);
+const insertOneResult = db.insertInto('users', user);
