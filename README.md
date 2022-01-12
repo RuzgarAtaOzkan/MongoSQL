@@ -1,4 +1,4 @@
-# mysql-mongo-api
+# MongoSQL
 
 ## Installation
 
